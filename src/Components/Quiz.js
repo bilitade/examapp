@@ -144,16 +144,8 @@ componentDidMount(){
 
 
  correctAnswer=()=>{
-  document.querySelector('.alert-success').style.display="block"
-  setTimeout(()=>{
 
- 
-     document.querySelector('.alert-success').style.display="none"
-   
-
-  },500)
   
-
   this.setState(prevState=>({
       
        score:prevState.score+1,
@@ -176,14 +168,8 @@ componentDidMount(){
 
  }
  wrongAnswer=()=>{
-  document.querySelector('.alert-danger').style.display="block"
-  setTimeout(()=>{
-
-     document.querySelector('.alert-danger').style.display="none"
-
-
-  },1000)
-   
+ 
+ 
 
     this.setState(prevState=>({
   
@@ -370,32 +356,32 @@ const seconds = Math.floor((distance % (1000 * 60)) / 1000);
               <ul
                 className="text-center border rounded-0 align-content-center"
                 id="option-list"
-                style={{ paddingRight: 27, listStyle:'lower-alpha' }}
+                style={{ paddingRight: 27, listStyle:'upper-alpha' }}
               >
                 <li  id={optA.id} style={{ marginTop: 5, marginBottom: 5 }}>
                   <div onClick={this.handleOptionClick} id={optA.id} className="text-center d-lg-flex justify-content-lg-center btn btn-primary d-block d-flex">
-                   {optA.hasImg?<a  id={optA.id} href="#"><img alt="option A" id={optA.id} style={{ width: 64}} src={optA.ImgUrl} /></a>:" "}
+                   {optA.hasImg?<a  id={optA.id} ><img alt="option A" id={optA.id} style={{ width: 64}} src={optA.ImgUrl} /></a>:" "}
                     <p id={optA.id} >{optA.optionText}</p>
                   </div>
                 </li>
 
                 <li  id={optB.id}style={{ marginBottom: 5 }}>
                   <div onClick={this.handleOptionClick} id={optB.id} className="d-lg-flex justify-content-lg-center btn btn-primary d-block d-flex">
-                  {optB.hasImg? <a id={optB.id}  href="#"><img  alt="option B" id={optB.id} style={{ width: 64}} src={optB.ImgUrl} /></a> :" "}
+                  {optB.hasImg? <a id={optB.id}  ><img  alt="option B" id={optB.id} style={{ width: 64}} src={optB.ImgUrl} /></a> :" "}
                     <p id={optB.id} >{optB.optionText}</p>
                   </div>
                 </li>
 
                 <li id={optC.id} style={{ marginBottom: 5 }}>
                   <div onClick={this.handleOptionClick} id={optC.id} className="d-lg-flex justify-content-lg-center btn btn-primary d-block d-flex">
-                  {optC.hasImg?<a  id={optC.id}  href="#"><img  alt="option C" id={optC.id} style={{ width: 64}} src={optC.ImgUrl} /></a>:" "}
+                  {optC.hasImg?<a  id={optC.id}  ><img  alt="option C" id={optC.id} style={{ width: 64}} src={optC.ImgUrl} /></a>:" "}
                     <p  id={optC.id} >{optC.optionText}</p>
                   </div>
                 </li>
 
                 <li id={optD.id}  style={{marginBottom: 5 , marginTop: 5  }}>
                   <div  onClick={this.handleOptionClick} id={optD.id} className="d-lg-flex justify-content-lg-center btn btn-primary d-block d-flex">
-                  {optD.hasImg? <a id ={ optD.id}href="#"> <img   alt="option C" id ={ optD.id} style={{ width: 64}} src={optD.ImgUrl} /></a>  : <p></p>}
+                  {optD.hasImg? <a id ={ optD.id} > <img   alt="option C" id ={ optD.id} style={{ width: 64}} src={optD.ImgUrl} /></a>  : <p></p>}
                     <p id={optD.id} >{optD.optionText} </p>
                   </div>
                 </li>

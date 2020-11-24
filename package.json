@@ -2,12 +2,21 @@
   "description": "electron",
   "author": "Bilisuma Tadesse",
   "build": {
-    "appId": "com.examapp"
+    "appId": "com.examapp",
+    "compression": "maximum",
+    "nsis": {
+    
+      "oneClick": false,
+      "perMachine":true,
+      "allowToChangeInstallationDirectory":true
+   }
+
   },
   "main": "public/electron.js",
   "homepage": "./",
-  "name": "react-electron",
+  "name": "model-exam-app",
   "version": "0.1.0",
+  
  
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
