@@ -1,12 +1,10 @@
 import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
+
 
 export default class Home extends Component {
   render() {
     return (
       <Fragment>
-
-
         <div
           className="border rounded-0"
           id="home-page"
@@ -42,7 +40,8 @@ export default class Home extends Component {
               <strong>&nbsp;Exam</strong>
             </h1>
             <div style={{ marginTop: "20%" }}>
-              <select id="lang"
+              <select
+                id="lang"
                 style={{ width: "42%", height: "4vh", fontSize: "1.2rem" }}
               >
                 <optgroup label="Select your Language">
@@ -54,13 +53,11 @@ export default class Home extends Component {
               </select>
             </div>
             <div style={{ marginTop: "12%", marginBottom: 33 }}>
-              <button onClick={(e)=>{
-
-               const el= document.getElementById('lang').value;
-                 this.props.history.push(el);
-
-              }}
-
+              <button
+                onClick={(e) => {
+                  const el = document.getElementById("lang").value;
+                  this.props.history.push(el);
+                }}
                 className="btn btn-primary"
                 type="button"
                 style={{ width: "33%" }}

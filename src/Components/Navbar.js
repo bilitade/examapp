@@ -2,19 +2,15 @@ import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
-
-  
-
-
   render() {
     return (
       <>
         <nav className="navbar navbar-light navbar-expand-sm fixed-top shadow-lg">
           <div className="container-fluid">
-            <a Link to="/" className="navbar-brand">
+            <Link  to="/" className="navbar-brand">
               Model&nbsp;
               <i className="fa fa-newspaper-o" /> Exam
-            </a>
+            </Link>
             <button
               data-toggle="collapse"
               className="navbar-toggler"
@@ -31,7 +27,7 @@ export default class Navbar extends Component {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/category" className="nav-link" >
+                  <Link to="/category" className="nav-link">
                     <strong>Category</strong>
                   </Link>
                 </li>
@@ -40,8 +36,7 @@ export default class Navbar extends Component {
             <div>
               <p>
                 <strong>Exam Mode:&nbsp;&nbsp;</strong>
-             <input type="checkbox"   onChange={this.props.changeExamMode}/>
-
+                <input type="checkbox" onChange={this.props.changeExamMode} />
               </p>
             </div>
           </div>

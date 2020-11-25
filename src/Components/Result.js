@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Navbar from "./Navbar"
+import Navbar from "./Navbar";
 export default class Result extends Component {
   state = {
     score: 0,
@@ -23,7 +23,7 @@ export default class Result extends Component {
   render() {
     return (
       <Fragment>
-      <Navbar/>
+        <Navbar />
         <div
           className="container border rounded"
           id="quiz-container"
@@ -36,15 +36,17 @@ export default class Result extends Component {
           >
             <span>
               <strong>STATUS:&nbsp;&nbsp;</strong>
-              {(this.state.score >75)?  <i
-                className="fa fa-check-circle"
-                style={{ fontSize: 43, color: "#2cd710" }}
-              />: <i
-              className="fa fa-times-circle"
-              style={{ fontSize: 43, color: "rgb(255,15,0)" }}
-            /> }
-             
-              
+              {this.state.score > 75 ? (
+                <i
+                  className="fa fa-check-circle"
+                  style={{ fontSize: 43, color: "#2cd710" }}
+                />
+              ) : (
+                <i
+                  className="fa fa-times-circle"
+                  style={{ fontSize: 43, color: "rgb(255,15,0)" }}
+                />
+              )}
             </span>
           </div>
           <div
@@ -55,15 +57,19 @@ export default class Result extends Component {
             <ul
               className="text-center border rounded-0 align-content-center"
               id="option-list"
-              style={{ paddingRight: 27 , listStyle:"none", textAlign:"center" }}
+              style={{
+                paddingRight: 27,
+                listStyle: "none",
+                textAlign: "center",
+              }}
             >
               <li
                 className="text-left"
                 style={{ marginTop: 5, marginBottom: 5, fontSize: "1.5rem" }}
               >
-                <strong>Your Score   &nbsp; </strong>&nbsp;-{" "}
+                <strong>Your Score &nbsp; </strong>&nbsp;-{" "}
                 <strong>
-                  <em>{(this.state.score).toFixed(2)}% &nbsp; &nbsp;&nbsp;</em>
+                  <em>{this.state.score.toFixed(2)}% &nbsp; &nbsp;&nbsp;</em>
                 </strong>
               </li>
               <li
@@ -79,7 +85,10 @@ export default class Result extends Component {
                 className="text-left"
                 style={{ marginBottom: 5, fontSize: "1.5rem" }}
               >
-                <strong>Number of Answered Question  {this.state.numberOfAnsweredQuestion}</strong>
+                <strong>
+                  Number of Answered Question{" "}
+                  {this.state.numberOfAnsweredQuestion}
+                </strong>
               </li>
               <li
                 className="text-left"

@@ -34,17 +34,15 @@ export const data = [
     answer: "1",
   },
 
-
-
-
-
   {
     question: {
       hasImg: false,
       questionText: `Dandiin manca'e (caccaabe) waan si qunnamuuf of-eegannoon konkolaachisi kan jedhuu mallattoo kami`,
       imgUrl: "",
     },
-    optionA: { id: "1",hasImg: true,
+    optionA: {
+      id: "1",
+      hasImg: true,
       ImgUrl: "icons/warning/asset34.png",
       optionText: "",
     },
@@ -69,9 +67,7 @@ export const data = [
     answer: "1",
   },
 
-
-
-{
+  {
     question: {
       hasImg: true,
       questionText: "Mallatton kun ergaa maal dabarsa",
@@ -81,8 +77,7 @@ export const data = [
       id: "1",
       hasImg: false,
       ImgUrl: "",
-      optionText:
-        ` Fuula duratti dandiin qaxxaamura waan si qunnamuuf of eeggannon konkolaachisi`,
+      optionText: ` Fuula duratti dandiin qaxxaamura waan si qunnamuuf of eeggannon konkolaachisi`,
     },
     optionB: {
       id: "2",
@@ -106,7 +101,6 @@ export const data = [
     answer: "3",
   },
 
-
   {
     question: {
       hasImg: true,
@@ -117,15 +111,13 @@ export const data = [
       id: "1",
       hasImg: false,
       ImgUrl: "",
-      optionText:
-        ` Mallatton Kun karaa jiru konkolaachisaa darbuun ni danda'ama`,
+      optionText: ` Mallatton Kun karaa jiru konkolaachisaa darbuun ni danda'ama`,
     },
     optionB: {
       id: "2",
       hasImg: false,
       ImgUrl: "",
-      optionText:
-       ` Konkolaataanii fi kan harkaan dhiibamu kamiyyuu kara mallatton kun jiru oofaa darbuun dhorkaadha`,
+      optionText: ` Konkolaataanii fi kan harkaan dhiibamu kamiyyuu kara mallatton kun jiru oofaa darbuun dhorkaadha`,
     },
     optionC: {
       id: "3",
@@ -142,27 +134,24 @@ export const data = [
     answer: "2",
   },
 
-
-
   {
     question: {
       hasImg: false,
-      questionText: "Daandiin tokko sarara ciccitaa fi sarara duudaadhan bakka lamatti yoo qooddame ?",
+      questionText:
+        "Daandiin tokko sarara ciccitaa fi sarara duudaadhan bakka lamatti yoo qooddame ?",
       imgUrl: "",
     },
     optionA: {
       id: "1",
       hasImg: false,
       ImgUrl: "",
-      optionText:
-        `Konkolaachisaan gara sarara lachuu darbee isa fuuldura isaa jiru bira dabruu ni danda'a`,
+      optionText: `Konkolaachisaan gara sarara lachuu darbee isa fuuldura isaa jiru bira dabruu ni danda'a`,
     },
     optionB: {
       id: "2",
       hasImg: false,
       ImgUrl: "",
-      optionText:
-       `Konkolaachisaan gara sarara duudaaa jiru sarara lachuu qaxxamuree isaa fuuldura bira darbuu ni danda'a`,
+      optionText: `Konkolaachisaan gara sarara duudaaa jiru sarara lachuu qaxxamuree isaa fuuldura bira darbuu ni danda'a`,
     },
     optionC: {
       id: "3",
@@ -178,31 +167,4 @@ export const data = [
     },
     answer: "4",
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ];
