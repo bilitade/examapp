@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Navbar from "./Navbar";
 
-import { data } from "../question";
+import  data  from "../question.json";
 import btnNotification from "../media/audio/button-sound.mp3";
 import ansCorrect from "../media/audio/correct-answer.mp3";
 import ansWrong from "../media/audio/wrong-answer.mp3";
