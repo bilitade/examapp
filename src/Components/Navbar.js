@@ -5,12 +5,11 @@ export default class Navbar extends Component {
   render() {
     return (
       <>
-        <nav className="navbar navbar-light navbar-expand-sm fixed-top shadow-lg">
+        <nav className="navbar navbar-light navbar-expand-sm fixed-top shadow-lg"  style={{background: "#ffffff"}}>
           <div className="container-fluid">
-            <Link  to="/" className="navbar-brand">
-              Model&nbsp;
-              <i className="fa fa-newspaper-o" /> Exam
-            </Link>
+          <a className="navbar-brand" href="/"><img src="assets/img/moooodel.png" alt="" style={{minWidth: 50, maxWidth: 70}} /></a>
+
+
             <button
               data-toggle="collapse"
               className="navbar-toggler"
@@ -27,10 +26,18 @@ export default class Navbar extends Component {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/category" className="nav-link">
-                    <strong>Category</strong>
+                  <Link to="/dashBoard" className="nav-link">
+                    <strong>DashBoard</strong>
                   </Link>
                 </li>
+                <li className="nav-item">
+                <Link to="/category" className="nav-link">
+                  <strong>Exam Category</strong>
+                </Link>
+              </li>
+
+
+
               </ul>
             </div>
             <div>

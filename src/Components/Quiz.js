@@ -1,19 +1,27 @@
 import React, { Component, Fragment } from "react";
 import Navbar from "./Navbar";
+import "jquery/dist/jquery";
+import $ from "jquery";
+import "bootstrap/js/dist/toast";
 
-import  data  from "../question.json";
+
+import law from "../exam/law.json";
+import motor from "../exam/motor.json";
+import privat from "../exam/private.json";
+import technical from "../exam/technical.json";
+import frieght from "../exam/law.json";
+
 import btnNotification from "../media/audio/button-sound.mp3";
-import ansCorrect from "../media/audio/correct-answer.mp3";
-import ansWrong from "../media/audio/wrong-answer.mp3";
+
 
 export default class Quiz extends Component {
   state = {
-    questions: data,
+    questions: null,
     currentQuestion: {},
     nextQuestion: {},
     previousQuestion: {},
     answer: 0,
-    numberOfQuestions: data.length,
+    numberOfQuestions: 0,
     numberOfAnsweredQuestion: 0,
     currentQuestionIndex: 0,
     score: 0,
@@ -27,26 +35,73 @@ export default class Quiz extends Component {
   };
   Interval = null;
 
+ 
+
   // function to display first question
   displayQuestions = (
-    questions,
-    currentQuestion,
-    nextQuestion,
-    previousQuestion
+    
+
   ) => {
-    let { currentQuestionIndex } = this.state;
-    questions = this.state.questions;
-    currentQuestion = questions[currentQuestionIndex];
-    nextQuestion = questions[currentQuestionIndex + 1];
-    previousQuestion = questions[currentQuestionIndex - 1];
-    const answer = currentQuestion.answer;
-    this.setState({
-      currentQuestion,
-      nextQuestion,
-      previousQuestion,
-      answer,
-    });
+
+    this.setState((prevState)=>{
+      const { state } = this.props.location;
+       switch(state.examCategory)
+       {
+         case "motor": 
+         prevState.questions= motor;
+         prevState.numberOfQuestions= motor.length;
+         break;
+         case "private":
+          prevState.questions= privat;
+         prevState.numberOfQuestions= privat.length;
+         break;
+
+         case "technical":
+          prevState.questions= technical;
+          prevState.numberOfQuestions= technical.length;
+          break;
+          case "law":
+            prevState.questions= law;
+            prevState.numberOfQuestions=law.length;
+            break;
+            case "frieght":
+              prevState.questions= frieght;
+              prevState.numberOfQuestions=frieght.length;
+              break;
+
+       }
+       
+         
+        
+
+    },()=>{
+
+      let currentQuestionIndex=this.state.currentQuestionIndex
+
+  
+
+      let questions=this.state.questions;
+      
+      let CurrentQuestion = questions[currentQuestionIndex];
+      let NextQuestion = questions[currentQuestionIndex + 1];
+      let PreviousQuestion = questions[currentQuestionIndex - 1];
+      let Answer=CurrentQuestion.answer
+       this.setState({
+        currentQuestion:CurrentQuestion,
+         nextQuestion:NextQuestion,
+         previousQuestion:PreviousQuestion,
+         answer:Answer,
+       }); 
+
+
+    })
+
+
+   
   };
+
+
+
   changeExamMode = (e) => {
     this.setState(
       (prevState) => ({
@@ -66,20 +121,10 @@ export default class Quiz extends Component {
   };
 
   // call display question function when the react app starts
-  componentDidMount() {
-    const {
-      questions,
-      currentQuestion,
-      nextQuestion,
-      previousQuestion,
-    } = this.state;
-
-    this.displayQuestions(
-      questions,
-      currentQuestion,
-      nextQuestion,
-      previousQuestion
-    );
+  componentDidMount( ) {
+  
+   
+    this.displayQuestions();
   }
 
   handleOptionClick = (e) => {
@@ -100,13 +145,15 @@ export default class Quiz extends Component {
 
     setTimeout(() => {
       this.props.history.push({
-        pathname: "/play/result",
+        pathname: "/result",
         state: PlayState,
       });
     }, 1000);
   };
 
   correctAnswer = () => {
+    $("#rightToast").toast("show");
+
     this.setState(
       (prevState) => ({
         score: prevState.score + 1,
@@ -120,16 +167,14 @@ export default class Quiz extends Component {
           this.endGame();
         } else {
           this.displayQuestions(
-            this.state.questions,
-            this.state.currentQuestion,
-            this.state.nextQuestion,
-            this.state.previousQuestion
+      
           );
         }
       }
     );
   };
   wrongAnswer = () => {
+    $("#wrongToast").toast("show");
     this.setState(
       (prevState) => ({
         wrongAnswers: prevState.wrongAnswers + 1,
@@ -141,10 +186,7 @@ export default class Quiz extends Component {
           this.endGame();
         } else {
           this.displayQuestions(
-            this.state.questions,
-            this.state.currentQuestion,
-            this.state.nextQuestion,
-            this.state.previousQuestion
+          
           );
         }
       }
@@ -165,10 +207,7 @@ export default class Quiz extends Component {
         }),
         () => {
           this.displayQuestions(
-            this.state.questions,
-            this.state.currentQuestion,
-            this.state.nextQuestion,
-            this.state.previousQuestion
+        
           );
         }
       );
@@ -184,10 +223,7 @@ export default class Quiz extends Component {
           }),
           () => {
             this.displayQuestions(
-              this.state.questions,
-              this.state.currentQuestion,
-              this.state.nextQuestion,
-              this.state.previousQuestion
+             
             );
           }
         );
@@ -239,19 +275,18 @@ export default class Quiz extends Component {
   };
 
   render() {
-    const { currentQuestion } = this.state;
+     const { currentQuestion } = this.state;
     let quest = { ...currentQuestion.question };
     let optA = { ...currentQuestion.optionA };
     let optB = { ...currentQuestion.optionB };
     let optC = { ...currentQuestion.optionC };
     let optD = { ...currentQuestion.optionD };
-
+ 
     return (
       <Fragment>
-        <audio id="correctAnswer" src={ansCorrect}></audio>
-        <audio id="wrongAnswer" src={ansWrong}></audio>
+     
         <audio id="btn-sound" src={btnNotification}></audio>
-
+ 
         <div
           className="border rounded-0"
           id="quiz-page"
@@ -354,7 +389,7 @@ export default class Quiz extends Component {
                     className="d-lg-flex justify-content-lg-center btn btn-primary d-block d-flex"
                   >
                     {optC.hasImg ? (
-                      <a  href={() => false} id={optC.id}>
+                      <a href={() => false} id={optC.id}>
                         <img
                           alt="option C"
                           id={optC.id}
@@ -426,25 +461,18 @@ export default class Quiz extends Component {
                 Quit
               </button>
 
-              <div
-                className="alert alert-success w-25 float-left"
-                style={{ display: "none" }}
-                role="alert"
-              >
-                Sirridha
+              <div id="wrongToast" class="toast mt-3  bg-danger">
+                <div class="toast-body ">Wrong</div>
               </div>
-              <div
-                className="alert alert-danger w-25 float-left"
-                style={{ display: "none" }}
-                role="alert"
-              >
-                Dogogora
+              <div id="rightToast" class="toast mt-3 bg-success">
+                <div class="toast-body ">Correct</div>
               </div>
+              
             </div>
             <div></div>
           </div>
-        </div>
-      </Fragment>
+        </div>  
+      </Fragment> 
     );
   }
 }

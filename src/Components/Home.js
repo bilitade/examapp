@@ -42,10 +42,10 @@ export default class Home extends Component {
             <div style={{ marginTop: "20%" }}>
               <select
                 id="lang"
-                style={{ width: "42%", height: "4vh", fontSize: "1.2rem" }}
+                style={{ width: "40%",  fontSize: "1.2rem" }}
               >
                 <optgroup label="Select your Language">
-                  <option value="/play/quiz" defaultValue>
+                  <option value="/dashBoard" defaultValue>
                     Afaan Oromo
                   </option>
                   <option value="amahric">አማርኛ</option>
