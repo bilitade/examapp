@@ -16,7 +16,7 @@ export default class category extends Component {
           <div
             className="container-sm text-left"
             id="category-container"
-            style={{ width: "70%", marginTop: 104, height: "67vh" }}
+            style={{ width: "70%", marginTop: 104 }}
           >
             <div onClick={(e) => {
                  
