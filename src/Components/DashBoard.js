@@ -54,7 +54,7 @@ export default class DashBoard extends Component {
                           Traffic signs
                         </h4>
                         <p className="text-center ">
-                        <Link to="/traffic-sign">
+                        <Link to="/dashBoard/traffic">
                         <i
                         className="fa fa-warning text-danger"
                         style={{ fontSize: "10rem" }}
@@ -80,7 +80,42 @@ export default class DashBoard extends Component {
                     </div>
                   </div>
                 </div>
+                 
+
+
+
+
               </div>
+
+              <footer
+              style={{
+                position: "fixed",
+                bottom: 0,
+                zIndex: 2,
+                width: "100%",
+                background: "rgb(21,21,21)",
+                height: 27,
+              }}
+            >
+              <div style={{ width: "100%" }}>
+                <p
+                  className="text-center text-light"
+                  style={{
+                    fontFamily: "Alatsi, sans-serif",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  MODEL©2020
+                  <br />©<br />
+                  <br />©<br />
+                  <br />
+                </p>
+              </div>
+            </footer>
+
+
+
+
             </div>
           </Fragment>
         );

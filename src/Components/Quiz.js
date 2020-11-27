@@ -68,6 +68,8 @@ export default class Quiz extends Component {
               prevState.questions= frieght;
               prevState.numberOfQuestions=frieght.length;
               break;
+              default:
+                console.log("error")
 
        }
        

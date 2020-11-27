@@ -1,0 +1,51 @@
+[
+
+{
+
+  "img":"icons/lights/red.png",
+  "text":" shows red traffic light"
+
+
+}
+,
+{
+
+  "img":"icons/lights/yellow.png",
+  "text":" shows red traffic light"
+
+
+},
+{
+
+  "img":"icons/lights/green.png",
+  "text":" shows red traffic light"
+
+
+},
+{
+
+  "img":"icons/lights/redYellow.png",
+  "text":" shows red traffic light"
+},
+{
+
+  "img":"icons/lights/yellowOnOff.gif",
+  "text":" shows red traffic light"
+
+
+},
+{
+
+  "img":"icons/lights/redOnOff.gif",
+  "text":" shows red traffic light"
+
+
+}
+
+
+
+
+
+
+
+]
