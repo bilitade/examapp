@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Navbar from'./Navbar'
+import Footer from './Footer'
 
 
 export default class category extends Component {
@@ -117,6 +118,7 @@ export default class category extends Component {
               </div>
             </div>
           </div>
+          <Footer/>
         </div>
       </Fragment>
     );

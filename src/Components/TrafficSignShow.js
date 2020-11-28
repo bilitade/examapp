@@ -121,7 +121,7 @@ export default class TrafficSignShow extends Component {
                             style={{ width: "25%" }}
                           />
                         </td>
-                        <td>{data.text}</td>
+                        <td> <b>{data.text}</b> </td>
                       </tr>
                      )) }
                    

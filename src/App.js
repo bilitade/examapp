@@ -5,6 +5,9 @@ import Result from "./Components/Result";
 import Home from "./Components/Home";
 import Traffic from "./Components/TrafficDashboard"
 import DashBoard from './Components/DashBoard'
+import 'jquery/dist/jquery.min'
+import 'bootstrap/dist/js/bootstrap.bundle'
+
 import TrafficSignShow from './Components/TrafficSignShow'
 
 

@@ -10,6 +10,8 @@ export default class Result extends Component {
   };
 
   componentDidMount() {
+
+      if (this.props.location.state!==undefined){
     const { state } = this.props.location;
     this.setState({
       score: (state.score / state.numberOfQuestions) * 100,
@@ -18,6 +20,7 @@ export default class Result extends Component {
       correctAnswers: state.correctAnswers,
       wrongAnswers: state.wrongAnswers,
     });
+  }
   }
 
   render() {
