@@ -112,7 +112,255 @@
 "text":"Naannoo barattoonni bay'atan waan ta'eef of eeggadhu darbi"
 
 
+},
+{
+  "img":"icons/warning/asset19.png",
+"text":"Daandii Bineensonni bosonaa irraa darban waan ta'eef of eeggannoon darbi "
+
+
+},
+{
+  "img":"icons/warning/asset20.png",
+"text":"Daandiin kallatti afurii waan simudatuuf dhaabadhuu kanneen biroof dura kennuudhaan of eeggadhuu darbi"
+
+
+},
+{
+  "img":"icons/warning/asset23.png",
+"text":"Daandiin gara fuula duraa fi gara bitaatti geessu waan si mudatuuf of eeggannoon darbi"
+
+
+},
+{
+  "img":"icons/warning/asset24.png",
+"text":"Daandiin gara fuula duraa fi gara mirgaatti geessu waan si mudatuuf of eeggannoon darbi"
+
+
+},
+{
+  "img":"icons/warning/asset25.png",
+"text":"Daandiin baaburaa cufaa hin qabne waan fuul-dura simudatuuf dhaabadhuu baaburi akka hin jirre mirkaneefadhu darbi"
+
+
+},
+
+{
+  "img":"icons/warning/asset26.png",
+"text":"bubbeen (bomboleettiin) qaxxaamura daandii bubbisu waan si muudatuuf of eeggannon konkolaachisi"
+
+
+},
+{
+  "img":"icons/warning/asset27.png",
+"text":"Dhagaan gommaa konkolaataan furfuuramu( darbatamu) fuul-dura kee waan jiruuf  of eeggannon ofi"
+
+
+},
+{
+  "img":"icons/warning/asset29.png",
+"text":"Daandiin waal qaxxamuru (cross-road) waan siqunnamuf of eeggannon offi"
+
+
+},
+{
+  "img":"icons/warning/asset30.png",
+"text":"Daandiin baaburaa cufaa qabu waan si mudatuuf of eeggadhu darbi"
+
+
+},
+{
+  "img":"icons/warning/asset31.png",
+"text":"daandiin fuula kee dura gama lamaanin dhiphataa waan deemuuf of eeggadhuu konkolaachisi"
+
+
 }
+,
+{
+  "img":"icons/warning/asset32.png",
+"text":" Fuul-dura kee Daandiin gama Bitaan dhiphataa waan deemuuf of eeggadhuu konkolaachisi"
+
+},
+
+{
+  "img":"icons/warning/asset33.png",
+"text":" Fuul-dura kee Daandiin gama Mirgaan dhiphataa waan deemuuf of eeggadhuu konkolaachisi"
+
+},
+
+{
+  "img":"icons/warning/asset34.png",
+"text":" Fuul-dura kee Daandiin Caccabee(uneven road) waan jiruuf  of eeggadhuu konkolaachisi"
+
+},
+
+{
+"img":"icons/warning/asset36.png",
+"text":" Fuul-dura kee , saffisa xiqqeessuf kan tajaajilu daandiin lafa ol ka'aa(gooba) qabu fuul dura waan simudatuuf of eeggannon konkolachisi"
+
+},
+{
+  "img":"icons/warning/asset37.png",
+  "text":" Daandii beeyladanni qaxxamurru waan ta'ee of eeggannon deemi"
+  
+  },
+  {
+    "img":"icons/warning/asset38.png",
+    "text":"Daandii irra haalli sodaachisaa fi  balaafamaa waan jiruuf of eeggannoon konkolaachisi."
+    
+    },
+    {
+      "img":"icons/warning/asset39.png",
+      "text":" Fuul-duraa kee qaxxamurri hadiida baaburaa waan jiruuf of eeggannoon konkolaachisi"  
+      },
+
+  {
+    "img":"icons/warning/asset40.png",
+    "text":" Fuul-duraa kee qaxxamurri hadiida baaburaa Abbaa lama waan jiruuf of eeggannoon konkolaachisi"
+    
+    },
+    {
+      "img":"icons/warning/asset41.png",
+      "text":" Fageenya dhiyoo keessatti daandiin baaburaa hagam akka sirraa fagaatuu kan agarsiisu yoo ta'u, uleen abbaa sarara diimaa 3  fageenya meetira 250, abbaa sarara diimaa 2 fageenya  meetira 170, abbaa sarara 1 fageenya meetira 100 irratti  daandiin baburaa waan siqqunnamuf of eeggannoon konkoolachisi kan jedhudha. "
+      
+      },
+    {
+      "img":"icons/warning/asset42.png",
+      "text":"Daandiin marfata cimaa gara bitaatti jallatu waan si muudatuuf of eeggannoon konkolaachisi"
+      
+    },
+    {
+      "img":"icons/warning/asset43.png",
+      "text":" Fuul-duraa kee dirreen taphannaa daa'immani waan jiruuf Saffisa kee xiqqeessun of eeggadhuu Konkolaachisi"
+      
+      },
+      {
+        "img":"icons/warning/asset44.png",
+        "text":" Fuul-duraa kee bakka konkolaattoni qonnaa daandii irra qaxxamuran waan jiruuf of eeggannon konkolaachisi"
+        
+        },
+        {
+          "img":"icons/warning/asset45.png",
+          "text":"Qaama miidhamtoonni fuul-dura wwan jiraniif ariitiikee xiqqeessii of eeggadhu darbi"
+          
+        },
+        {
+          "img":"icons/warning/asset47.png",
+          "text":"Daandiin Jajallataa waan si mudatuuf of eeggadhu Konkolaachisi"
+          
+        },
+        {
+          "img":"icons/warning/asset48.png",
+          "text":"fuula-dura kee  riqichi dhipaan waan si mudatuuf of eeggannon konkoolachisi"
+          
+        },
+        {
+          "img":"icons/warning/asset56.png",
+          "text":"Fuula-dura kee hojjettooni daandii suphan waan jiraaniif Saffisa kee xiqqeessun of eeggadhu darbi "
+          
+        },
+        {
+          "img":"icons/warning/asset57.png",
+          "text":"Fuula-dura kee Waajirri ittisa balaa( ibidda konkoolataan ittisa balaa ibiddaa daandii waan qaxxamuruuf) of eeggadhuu darbi  "
+          
+        },
+        {
+          "img":"icons/warning/asset58.png",
+          "text":"Fuula-dura kee bakka konkolaataan fe'umsaa daandii  qaxxamuran waan jiruff of eeggannoon  darbi "
+          
+        },
+        {
+          "img":"icons/warning/asset59.png",
+          "text":"Fuula-durii dandicha bakka lamatti hiramuu waan jalqabuuf saffisa kee xiqqeessii of eeggannoon darbi "
+          
+        },
+        {
+          "img":"icons/warning/asset60.png",
+          "text":"Fuula-duraa kee Xumurri dandii bakka lamatti hiramee ture  waan sii  qunnamuuf of eeggannoon darbi "
+          
+        },
+        {
+          "img":"icons/warning/asset61.png",
+          "text":"Mallattoon daandii dhaabbadhu jedhu fuul-dura waan jiruuf saffisa kee xiqqeessun of eeggannoon konkolaachisi "
+          
+        },
+        {
+          "img":"icons/warning/asset62.png",
+          "text":"Mallatton tajaajilamtoota daandiif dursa kenni jedhu fuula kee dura waan jiruuf saffisa kee xiqqeessii of eeggannon darbi "
+          
+        },
+        {
+          "img":"icons/warning/asset63.png",
+          "text":"Gama cinaacha isaan daandiin dabalata qabu waan jiruuf of eeggannoon konkolaachisi "
+          
+        },
+        {
+          "img":"icons/warning/asset64.png",
+          "text":"Daandiin walga'ii danaa 'Y' qabu waan si muudatuuf saffisa kee xiqqeessii of eeggannoon konkolaachisi "
+          
+        },
+        {
+          "img":"icons/warning/asset65.png",
+          "text":"Namni alaabaan sochii tiraafikaa keessumeessu fuuldura waan jiruuf saffisaa kee xiqqeessun of eeggadhuu darbi "
+          
+        },
+        {
+          "img":"icons/warning/asset67.png",
+          "text":"Namooni daandii safaran fuul-dura waan jiraaniif saffisa kee xiqqeessun of eeggadhu darbi "
+          
+        },
+        {
+          "img":"icons/warning/asset68.png",
+          "text":"Dandii kallatti afurii irra gama mirgaan qaxxamurri  Hadiida baaburaa waan jiruuf saffisa kee xiqqeessuun of eeggadhu darbi"
+          
+        },
+        {
+          "img":"icons/warning/asset69.png",
+          "text":"Dandii kallatti afurii irra gama bitaan qaxxamurri  Hadiida baaburaa waan jiruuf saffisa kee xiqqeessuun of eeggadhu darbi "
+          
+        },
+        {
+          "img":"icons/warning/asset70.png",
+          "text":"Daandii boca 'T' qabu maddi gama Mirgaatin qaxxamurri  Hadiida baaburaa waan jiruuf saffisa kee xiqqeessuun of eeggadhu darbi "
+          
+        },
+        {
+          "img":"icons/warning/asset71.png",
+          "text":"Dhuma daandii Asfaaltii waan simuudatuuf of eeggannoon konkolaachisi "
+          
+        }, 
+        {
+          "img":"icons/warning/asset72.png",
+          "text":"Danddiin qeenxeen lama gara daandii qeenxee tokkotti bakka jijjiiramu fuul-dura waan si mudatuuf of eeggannoon darbi "
+          
+        },
+        {
+          "img":"icons/warning/asset80.png",
+          "text":"Ibsaan tiraafika tajaajila hin keennine waan si mudatuuf of eeggannoon konkolaachsi "
+          
+        },
+        {
+          "img":"icons/warning/asset81.png",
+          "text":"daandiin hulluuqaa qabu waan si mudatuuf of eeggannoon Konkolaachisi "
+          
+        }
+
+
+        
+        
+        
+        
+        
+
+       
+       
+       
+
+
+
+
+
+        
+
 
 
 

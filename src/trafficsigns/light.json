@@ -3,41 +3,41 @@
 {
 
   "img":"icons/lights/red.png",
-  "text":" shows red traffic light"
+  "text":"Ibsaan diimaan yeroof ifu konkolaattonni gara qaxxaamura daandii osoo hin seeniin dhaabachuu qabu( ajaja dhaabbadhu jedhu dabarsa)" 
 
 
 }
 ,
+
 {
 
-  "img":"icons/lights/yellow.png",
-  "text":" shows red traffic light"
-
-
+  "img":"icons/lights/redYellow.png",
+  "text":" Ibsaan diimaa fi keelloo yeroo tokko (walfaana ) yeroo ifan konkolaattonni dhaabataanii turan deemuuf qopha'uu qabu( ajaja deemuuf qophaa'i jedhu dabarsa)"
 },
 {
 
   "img":"icons/lights/green.png",
-  "text":" shows red traffic light"
+  "text":"Ibsaan magariisni yeroo ifu konkolaattonni gara qaxxaamura daandii ga'ani darbuu ni danda'u(ajaja darbi jedhu dabarsa)"
 
 
 },
+
 {
 
-  "img":"icons/lights/redYellow.png",
-  "text":" shows red traffic light"
+  "img":"icons/lights/yellow.png",
+  "text":"Ibsaan Keelloon yeroo ifu konkolaattonni qaxxamura daandi keessa galan dafanii daandiicha gadi dhiisanii ba'uu qabu.  Konkolattoni gara qaxxamura daandii dhufaa jiran qaxxaamura daandii daandii keessa osoo hin seeniin dhaabachuu fi qophaa'uu qabu"
 },
+
+
 {
 
   "img":"icons/lights/yellowOnOff.gif",
-  "text":" shows red traffic light"
-
-
+  "text":"Ibsaan keelloo yeroo dheeraaf ifee bada walitti aansee yeroo ifu, Konkolaachisaan bakka qaxxaamura daandii ga'e daandii ga'ee saffisa (ariiti) isaa xiqqeessun bitaa fi mirgaa ilaalee darbuu qab. sochiin traafikaa xiqqaachuu ibsa"
 },
 {
 
   "img":"icons/lights/redOnOff.gif",
-  "text":" shows red traffic light"
+  "text":" Ibsaan diimaa yeroo dheeraaf ifee-badaa waliti aansee yeroo ifu , Konkolachisaan bakka qaxxaamura daandii ga'ee dhaabatee bitaa fi mirgaa ilaalee darbuu qaba"
 
 
 }
