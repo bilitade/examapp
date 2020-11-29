@@ -463,12 +463,15 @@ export default class Quiz extends Component {
                 Quit
               </button>
 
-              <div id="wrongToast" class="toast mt-3  bg-danger">
-                <div class="toast-body ">Wrong</div>
-              </div>
-              <div id="rightToast" class="toast mt-3 bg-success">
-                <div class="toast-body ">Correct</div>
-              </div>
+             <div className=" container">
+             
+             <div id="wrongToast" class="toast mt-3  bg-danger">
+             <div class="toast-body ">Wrong</div>
+           </div>
+           <div id="rightToast" class="toast mt-3 bg-success">
+             <div class="toast-body ">Correct</div>
+           </div>
+             </div>
               
             </div>
             <div></div>

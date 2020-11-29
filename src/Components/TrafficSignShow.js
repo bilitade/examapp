@@ -19,7 +19,7 @@ export default class TrafficSignShow extends Component {
 
       initialize=()=>{
 
-
+       if (this.props.location.state!==undefined){
         const { state } = this.props.location;
         switch (state.signtype) {
             case "warning":
@@ -50,10 +50,24 @@ export default class TrafficSignShow extends Component {
               break
         
             default:
-                console.log("no data")
+            console.log("no data")
         }
 
- 
+      }
+
+
+      else{
+
+        this.setState({
+          signtype:[{
+
+          img:"null",
+          text:"null"
+
+          }]
+         })
+
+      }
  }
  componentDidMount(){
      
@@ -107,21 +121,21 @@ export default class TrafficSignShow extends Component {
                   <table className="table table-striped table-bordered table-hover">
                     <thead>
                       <tr>
-                        <th className="text-center">Mallattoolee daandii</th>
-                        <th className="text-center">Ergaa isaan Dabarasan</th>
+                        <th  style={{fontSize:"1.2rem" ,fontStyle:"bold" }} className="text-center">Mallattoolee daandii</th>
+                        <th style={{fontSize:"1.2rem" ,fontStyle:"bold" }} className="text-center">Ergaa isaan Dabarasan</th>
                       </tr>
                     </thead>
                     <tbody>
                      { this.state.signtype.map( (data)=>(
 
                       <tr>
-                        <td className="text-center" style={{ width: "35%" }}>
+                        <td className="text-center" style={{ width: "35%", }}>
                           <img
                             src={data.img} alt=""
-                            style={{ width: "25%" }}
+                            style={{ width: "25%"   }}
                           />
                         </td>
-                        <td> <b>{data.text}</b> </td>
+                        <td> <strong>{data.text}</strong>  </td>
                       </tr>
                      )) }
                    
