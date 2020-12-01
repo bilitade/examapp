@@ -20,19 +20,15 @@ export default class Navbar extends Component {
             </button>
             <div className="collapse navbar-collapse" id="navcol-1">
               <ul className="nav navbar-nav text-justify mx-auto">
-                <li className="nav-item">
-                  <Link to="/" className="nav-link">
-                    <strong>Home</strong>
-                  </Link>
-                </li>
+              
                 <li className="nav-item">
                   <Link to="/dashBoard" className="nav-link">
-                    <strong>DashBoard</strong>
+                    <strong>Daashboordii</strong>
                   </Link>
                 </li>
                 <li className="nav-item">
                 <Link to="/category" className="nav-link">
-                  <strong>Exam Category</strong>
+                  <strong>Gosa Qormaataa</strong>
                 </Link>
               </li>
 
@@ -42,7 +38,7 @@ export default class Navbar extends Component {
             </div>
             <div>
               <p>
-                <strong>Exam Mode:&nbsp;&nbsp;</strong>
+                <strong>Akka Qormaataa :&nbsp;&nbsp;</strong>
                 <input type="checkbox" onChange={this.props.changeExamMode} />
               </p>
             </div>

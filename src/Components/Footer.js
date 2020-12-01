@@ -22,7 +22,7 @@ export default class Footer extends Component {
                   fontSize: "1.5rem",
                 }}
               >
-                MODEL©2020
+              Dhaabbata Leenjii Konkolaachisumma Moodeelii
                 <br />©<br />
                 <br />©<br />
                 <br />

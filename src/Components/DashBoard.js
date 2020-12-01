@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import {Link} from 'react-router-dom'
 import Navbar from './Navbar'
+import Footer from './Footer'
 
 export default class DashBoard extends Component {
     render() {
@@ -21,12 +22,9 @@ export default class DashBoard extends Component {
                   <div className="col col-sm-12 col-md-6">
                     <div className="card">
                       <div className="card-body">
-                        <h4 className="text-center card-title">Notes</h4>
+                        <h4 className="text-center card-title">Mallattoolee harka</h4>
                         <p className="text-center text-success">
-                          <Link to="/note" ><i
-                          className="fa fa-book text-success"
-                          style={{ fontSize: "10rem" }}
-                        />  </Link> 
+                          <Link to="/dashBoard/police" ><img src="icons/trafficpolice/asset1.png" alt=""  style={{ width:"10rem"  }}/>  </Link> 
                         </p>
                       </div>
                     </div>
@@ -34,7 +32,7 @@ export default class DashBoard extends Component {
                   <div className="col col-sm-12 col-md-6">
                     <div className="card">
                       <div className="card-body">
-                        <h4 className="text-center card-title">quiz</h4>
+                        <h4 className="text-center card-title">Qormaaata</h4>
                         <p className="text-center">
                          <Link to="/category">
                          <i
@@ -51,7 +49,7 @@ export default class DashBoard extends Component {
                     <div className="card">
                       <div className="card-body">
                         <h4 className="text-center card-title">
-                          Traffic signs
+                          Mallattoolee tiraafikaa
                         </h4>
                         <p className="text-center ">
                         <Link to="/dashBoard/traffic">
@@ -69,9 +67,9 @@ export default class DashBoard extends Component {
                   <div className="col col-sm-12 col-md-6">
                     <div className="card">
                       <div className="card-body">
-                        <h4 className="text-center card-title">About</h4>
+                        <h4 className="text-center card-title">waa'ee</h4>
                         <p className="text-center ">
-                           <Link to="/about"><i
+                           <Link to="/dashBoard/About"><i
                            className="fa fa-info-circle text-dark"
                            style={{ fontSize: "10rem" }}
                          /></Link>
@@ -87,32 +85,8 @@ export default class DashBoard extends Component {
 
               </div>
 
-              <footer
-              style={{
-                position: "fixed",
-                bottom: 0,
-                zIndex: 2,
-                width: "100%",
-                background: "rgb(21,21,21)",
-                height: 27,
-              }}
-            >
-              <div style={{ width: "100%" }}>
-                <p
-                  className="text-center text-light"
-                  style={{
-                    fontFamily: "Alatsi, sans-serif",
-                    fontSize: "1.5rem",
-                  }}
-                >
-                  MODEL©2020
-                  <br />©<br />
-                  <br />©<br />
-                  <br />
-                </p>
-              </div>
-            </footer>
-
+           
+             <Footer/>
 
 
 

@@ -24,7 +24,8 @@ export default class category extends Component {
                  
                 this.props.history.push({
                   pathname:"/quiz",
-                  state: {examCategory:"private"}
+                  state: {examCategory:"private",
+                          examTitle:"Private Autombile"}
 
                 });
               }}
@@ -35,7 +36,7 @@ export default class category extends Component {
                   style={{ background: "rgb(92,184,92)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category2.png"
                       style={{ width: "32%" }}
                     />
@@ -52,7 +53,7 @@ export default class category extends Component {
               onClick={(e) => {
                 this.props.history.push({
                   pathname:"/quiz",
-                  state: {examCategory:"motor"}
+                  state: {examCategory:"motor", examTitle:"Motorcylce"}
 
                 });
               }}
@@ -66,7 +67,7 @@ export default class category extends Component {
                   style={{ background: "rgb(2,117,216)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category3.png"
                       style={{ width: "32%" }}
                     />
@@ -76,14 +77,28 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-4">
+              <div
+              
+              
+              
+              onClick={(e) => {
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"public",
+                  examTitle:"Public Transport"}
+
+                });
+              }}
+              
+              
+              className="col-sm-12 col-md-4">
                 <div
                   className="jumbotron"
                   id="frieght"
                   style={{ background: "rgb(217,83,79)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category9.png"
                       style={{ width: "32%" }}
                     />
@@ -93,6 +108,10 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
+
+
+
+
               <div 
               onClick={(e) => {
                  
@@ -112,7 +131,7 @@ export default class category extends Component {
                   style={{ background: "rgb(91,192,222)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category10.png"
                       style={{ width: "32%" }}
                     />
@@ -122,14 +141,25 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+
+
+              <div
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"taxi2"}
+
+                });
+              }}
+              className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron"
                   id="private-automobile"
                   style={{ background: "rgb(41,43,44)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category6.png"
                       style={{ width: "32%" }}
                     />
@@ -139,14 +169,27 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+
+
+
+              <div
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"taxi"}
+
+                });
+              }}
+              
+              className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron"
                   id="private-automobile-1"
                   style={{ background: "rgb(240,173,78)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category6.png"
                       style={{ width: "32%" }}
                     />
@@ -156,14 +199,27 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+
+              <div
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"liquid"}
+
+                });
+              }}
+              
+              
+              
+              className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron border rounded"
                   id="private-automobile-2"
                   style={{ background: "rgb(247,247,247)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category8.png"
                       style={{ width: "32%" }}
                     />
@@ -173,14 +229,26 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+              <div
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"frieght2"}
+
+                });
+              }}
+              
+              
+              
+              className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron"
                   id="private-automobile-3"
                   style={{ background: "rgb(240,173,78)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category1.png"
                       style={{ width: "32%" }}
                     />
@@ -190,14 +258,26 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+
+              <div
+              
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"liquid2"}
+
+                });
+              }}
+              
+              className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron"
                   id="private-automobile-4"
                   style={{ background: "rgb(217,83,79)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category7.png"
                       style={{ width: "32%" }}
                     />
@@ -207,14 +287,25 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+              <div
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"frieght3"}
+
+                });
+              }}
+              
+              
+              className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron"
                   id="private-automobile-5"
                   style={{ background: "rgb(2,117,216)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category11.png"
                       style={{ width: "32%" }}
                     />
@@ -224,14 +315,28 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+              <div 
+              
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"technic"}
+
+                });
+              }}
+              
+              
+              
+              
+              className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron"
                   id="private-automobile-6"
                   style={{ background: "rgb(92,184,92)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category12.png"
                       style={{ width: "32%" }}
                     />
@@ -241,14 +346,26 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+              <div
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"technic2"}
+
+                });
+              }}
+              
+              
+              
+              className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron"
                   id="private-automobile-7"
                   style={{ background: "rgb(91,192,222)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category12.png"
                       style={{ width: "32%" }}
                     />
@@ -276,7 +393,7 @@ export default class category extends Component {
                   style={{ background: "rgb(41,43,44)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category4.png"
                       style={{ width: "32%" }}
                     />
@@ -286,14 +403,24 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+              <div 
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"Psychology"}
+
+                });
+              }}
+              
+              className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron"
                   id="private-automobile-10"
                   style={{ background: "rgb(217,83,79)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category14.png"
                       style={{ width: "32%" }}
                     />
@@ -303,14 +430,28 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+              <div
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"dryload"}
+
+                });
+              }}
+              
+              
+              
+              
+              
+              className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron border rounded"
                   id="private-automobile-8"
                   style={{ background: "rgb(247,247,247)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category11.png"
                       style={{ width: "32%" }}
                     />
@@ -320,14 +461,26 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+              <div
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"info"}
+
+                });
+              }}
+              
+              
+              
+              className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron"
                   id="private-automobile-11"
                   style={{ background: "rgb(240,173,78)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category13.png"
                       style={{ width: "32%" }}
                     />
@@ -337,14 +490,24 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+              <div
+              
+              
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"emergency"}
+
+                });
+              }} className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron"
                   id="private-automobile-12"
                   style={{ background: "rgb(2,117,216)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category15.png"
                       style={{ width: "32%" }}
                     />
@@ -354,14 +517,24 @@ export default class category extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-md-4">
+              <div
+              onClick={(e) => {
+                 
+                this.props.history.push({
+                  pathname:"/quiz",
+                  state: {examCategory:"technical"}
+
+                });
+              }}
+
+              className="col-xs-12 col-md-4">
                 <div
                   className="jumbotron"
                   id="private-automobile-13"
                   style={{ background: "rgb(92,184,92)" }}
                 >
                   <div className="text-center">
-                    <img
+                    <img alt=""
                       src="icons/category/category5.png"
                       style={{ width: "32%" }}
                     />

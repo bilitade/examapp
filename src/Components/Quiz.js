@@ -10,7 +10,19 @@ import motor from "../exam/motor.json";
 import privat from "../exam/private.json";
 import technical from "../exam/technical.json";
 import frieght from "../exam/law.json";
-
+import dryload from "../exam/dryload.json";
+import emergency from "../exam/emergency.json";
+import frieght2 from "../exam/frieght2.json";
+import frieght3 from "../exam/frieght3.json";
+import info from"../exam/info.json";
+import liquid from"../exam/liquid.json";
+import liquid2 from "../exam/liquid2.json"
+import Psychology from "../exam/Pschology.json";
+import publicc from "../exam/public.json";
+import taxi from "../exam/taxi.json";
+import taxi2 from "../exam/taxi2.json"
+import technic from "../exam/technic.json";
+import technic2 from "../exam/technic2.json";
 import btnNotification from "../media/audio/button-sound.mp3";
 
 
@@ -28,6 +40,7 @@ export default class Quiz extends Component {
     correctAnswers: 0,
     wrongAnswers: 0,
     time: {
+      hour:0,
       minute: 0,
       seconds: 0,
     },
@@ -35,74 +48,112 @@ export default class Quiz extends Component {
   };
   Interval = null;
 
- 
-
   // function to display first question
-  displayQuestions = (
-    
-
-  ) => {
-
-    this.setState((prevState)=>{
-      const { state } = this.props.location;
-       switch(state.examCategory)
-       {
-         case "motor": 
-         prevState.questions= motor;
-         prevState.numberOfQuestions= motor.length;
-         break;
-         case "private":
-          prevState.questions= privat;
-         prevState.numberOfQuestions= privat.length;
-         break;
-
-         case "technical":
-          prevState.questions= technical;
-          prevState.numberOfQuestions= technical.length;
-          break;
-          case "law":
-            prevState.questions= law;
-            prevState.numberOfQuestions=law.length;
+  displayQuestions = () => {
+    this.setState(
+      (prevState) => {
+        const { state } = this.props.location;
+        switch (state.examCategory) {
+          case "motor":
+            prevState.questions = motor;
+            prevState.numberOfQuestions = motor.length;
             break;
-            case "frieght":
-              prevState.questions= frieght;
-              prevState.numberOfQuestions=frieght.length;
-              break;
-              default:
-                console.log("error")
+          case "private":
+            prevState.questions = privat;
+            prevState.numberOfQuestions = privat.length;
+            break;
 
-       }
-       
-         
-        
+          case "dryload":
+            prevState.questions = dryload;
+            prevState.numberOfQuestions = dryload.length;
+            break;
 
-    },()=>{
+          case "emergency":
+            prevState.questions = emergency;
+            prevState.numberOfQuestions = emergency.length;
+            break;
+          case "frieght2":
+            prevState.questions = frieght2;
+            prevState.numberOfQuestions = frieght2.length;
+            break;
 
-      let currentQuestionIndex=this.state.currentQuestionIndex
+          case "frieght3":
+            prevState.questions = frieght3;
+            prevState.numberOfQuestions = frieght3.length;
+            break;
+          case "info":
+            prevState.questions = info;
+            prevState.numberOfQuestions = info.length;
+            break;
 
-  
+          case "liquid":
+            prevState.questions = liquid;
+            prevState.numberOfQuestions = liquid.length;
+            break;
+          case "liquid2":
+            prevState.questions = liquid2;
+            prevState.numberOfQuestions = liquid2.length;
+            break;
 
-      let questions=this.state.questions;
-      
-      let CurrentQuestion = questions[currentQuestionIndex];
-      let NextQuestion = questions[currentQuestionIndex + 1];
-      let PreviousQuestion = questions[currentQuestionIndex - 1];
-      let Answer=CurrentQuestion.answer
-       this.setState({
-        currentQuestion:CurrentQuestion,
-         nextQuestion:NextQuestion,
-         previousQuestion:PreviousQuestion,
-         answer:Answer,
-       }); 
+          case "Psychology":
+            prevState.questions = Psychology;
+            prevState.numberOfQuestions = Psychology.length;
+            break;
+          case "public":
+            prevState.questions = publicc;
+            prevState.numberOfQuestions = publicc.length;
+            break;
+          case "taxi":
+            prevState.questions = taxi;
+            prevState.numberOfQuestions = taxi.length;
+            break;
+          case "taxi2":
+            prevState.questions = taxi2;
+            prevState.numberOfQuestions = taxi2.length;
+            break;
+          case "technic":
+            prevState.questions = technic;
+            prevState.numberOfQuestions = technic.length;
+            break;
+          case "technic2":
+            prevState.questions = technic2;
+            prevState.numberOfQuestions = technic2.length;
+            break;
 
+          case "technical":
+            prevState.questions = technical;
+            prevState.numberOfQuestions = technical.length;
+            break;
+          case "law":
+            prevState.questions = law;
+            prevState.numberOfQuestions = law.length;
+            break;
+          case "frieght":
+            prevState.questions = frieght;
+            prevState.numberOfQuestions = frieght.length;
+            break;
+          default:
+            console.log("error");
+        }
+      },
+      () => {
+        let currentQuestionIndex = this.state.currentQuestionIndex;
 
-    })
+        let questions = this.state.questions;
 
-
-   
+        let CurrentQuestion = questions[currentQuestionIndex];
+        let NextQuestion = questions[currentQuestionIndex + 1];
+        let PreviousQuestion = questions[currentQuestionIndex - 1];
+        let Answer = CurrentQuestion.answer;
+        this.setState({
+          currentQuestion: CurrentQuestion,
+          nextQuestion: NextQuestion,
+          previousQuestion: PreviousQuestion,
+          answer: Answer,
+        });
+      }
+    );
   };
-
-
 
   changeExamMode = (e) => {
     this.setState(
@@ -115,7 +166,7 @@ export default class Quiz extends Component {
         } else {
           clearInterval(this.Interval);
           this.setState({
-            time: { minute: 0, seconds: 0 },
+            time: {hour:0, minute: 0, seconds: 0 },
           });
         }
       }
@@ -123,9 +174,7 @@ export default class Quiz extends Component {
   };
 
   // call display question function when the react app starts
-  componentDidMount( ) {
-  
-   
+  componentDidMount() {
     this.displayQuestions();
   }
 
@@ -168,9 +217,7 @@ export default class Quiz extends Component {
         if (this.state.nextQuestion === undefined) {
           this.endGame();
         } else {
-          this.displayQuestions(
-      
-          );
+          this.displayQuestions();
         }
       }
     );
@@ -187,9 +234,7 @@ export default class Quiz extends Component {
         if (this.state.nextQuestion === undefined) {
           this.endGame();
         } else {
-          this.displayQuestions(
-          
-          );
+          this.displayQuestions();
         }
       }
     );
@@ -208,9 +253,7 @@ export default class Quiz extends Component {
           currentQuestionIndex: prevState.currentQuestionIndex + 1,
         }),
         () => {
-          this.displayQuestions(
-        
-          );
+          this.displayQuestions();
         }
       );
     }
@@ -224,9 +267,7 @@ export default class Quiz extends Component {
             currentQuestionIndex: prevState.currentQuestionIndex - 1,
           }),
           () => {
-            this.displayQuestions(
-             
-            );
+            this.displayQuestions();
           }
         );
       }
@@ -256,40 +297,40 @@ export default class Quiz extends Component {
   };
 
   startTimer = () => {
-    const countDownTime = Date.now() + 120000;
+    const countDownTime = Date.now() + this.state.numberOfQuestions* 60000;
     this.Interval = setInterval(() => {
       const now = new Date();
       const distance = countDownTime - now;
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       if (distance < 0) {
         clearInterval(this.Interval);
-        this.setState({ time: { minutes: 0, seconds: 0 } }, () => {
+        this.setState({ time: { hour:0, minutes: 0, seconds: 0 } }, () => {
           this.endGame();
         });
       } else {
         this.setState({
-          time: { minute: minutes, seconds: seconds },
+          time: { hour:hours, minute: minutes, seconds: seconds },
         });
       }
     }, 1000);
   };
 
   render() {
-     const { currentQuestion } = this.state;
+    const { currentQuestion } = this.state;
     let quest = { ...currentQuestion.question };
     let optA = { ...currentQuestion.optionA };
     let optB = { ...currentQuestion.optionB };
     let optC = { ...currentQuestion.optionC };
     let optD = { ...currentQuestion.optionD };
- 
+
     return (
       <Fragment>
-     
         <audio id="btn-sound" src={btnNotification}></audio>
- 
-        <div
+
+        <div 
           className="border rounded-0"
           id="quiz-page"
           style={{ width: "100%", paddingTop: 100, height: "100vh" }}
@@ -303,12 +344,12 @@ export default class Quiz extends Component {
           >
             <div className="btn   btn-light">
               {" "}
-              Time Left : {this.state.time.minute} m :{this.state.time.seconds}s
+              Yeroo : <strong>{ this.state.time.hour}</strong> hr : <strong>{this.state.time.minute}</strong> m : <strong>{this.state.time.seconds}</strong> s
             </div>
             <span className="btn btn-dark ml-4 ">
               {" "}
-              Question {this.state.currentQuestionIndex + 1} of{" "}
-              {this.state.numberOfQuestions}
+              Gaaffilee {" "}  <i>{this.state.numberOfQuestions} </i> {"  "} keessa{ " "}  <i>{this.state.currentQuestionIndex + 1}</i> <sup>ffa</sup>{" "}
+             
             </span>
 
             <div
@@ -442,7 +483,7 @@ export default class Quiz extends Component {
                 onClick={this.handleBtnClick}
                 style={{ paddingRight: 15, marginRight: 10, paddingLeft: 15 }}
               >
-                Prev
+                Duuba
               </button>
               <button
                 id="btn-next"
@@ -451,7 +492,7 @@ export default class Quiz extends Component {
                 onClick={this.handleBtnClick}
                 style={{ marginRight: 10 }}
               >
-                Next
+                Fuldura
               </button>
               <button
                 id="btn-quit"
@@ -460,24 +501,21 @@ export default class Quiz extends Component {
                 type="button"
                 style={{ marginRight: 10 }}
               >
-                Quit
+                Dhiisi
               </button>
 
-             <div className=" container">
-             
-             <div id="wrongToast" class="toast mt-3  bg-danger">
-             <div class="toast-body ">Wrong</div>
-           </div>
-           <div id="rightToast" class="toast mt-3 bg-success">
-             <div class="toast-body ">Correct</div>
-           </div>
-             </div>
-              
+              <div className=" container">
+                <div id="wrongToast" class="toast mt-3  bg-danger">
+                  <div class="toast-body ">Dogogora!</div>
+                </div>
+                <div id="rightToast" class="toast mt-3 bg-success">
+                  <div class="toast-body ">Sirridha!</div>
+                </div>
+              </div>
             </div>
-            <div></div>
           </div>
-        </div>  
-      </Fragment> 
+        </div>
+      </Fragment>
     );
   }
 }

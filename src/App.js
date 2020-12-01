@@ -7,6 +7,8 @@ import Traffic from "./Components/TrafficDashboard"
 import DashBoard from './Components/DashBoard'
 import 'jquery/dist/jquery.min'
 import 'bootstrap/dist/js/bootstrap.bundle'
+import Police from'./Components/Police'
+import About from'./Components/About'
 
 import TrafficSignShow from './Components/TrafficSignShow'
 
@@ -20,7 +22,10 @@ export default class App extends Component {
         <Route exact strict path="/quiz" component={Quiz} />
         <Route exact strict path="/category" component={category} />
         <Route exact strict path="/dashBoard" component={DashBoard} />
+        <Route exact strict path="/dashBoard/About" component={About} />
         <Route exact strict path="/dashBoard/traffic" component={Traffic} />
+        <Route exact strict path="/dashBoard/police" component={Police} />
+        
         
         <Route exact strict path="/dashBoard/traffic/showpage" component={TrafficSignShow} />
         <Route exact strict path="/" component={Home} />

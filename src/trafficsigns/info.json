@@ -2,9 +2,52 @@
 
     {
 
+      "img":"icons/info/asset.png",
+      "text":"Bakka mana ciisichaa "
+    },
+    
+    {
+
       "img":"icons/info/asset1.png",
-      "text":""
+      "text":"Bakka suphaa Konkolaattota "
+    },
+  
+    {
+
+      "img":"icons/info/asset2.png",
+      "text":"Bakka mana nyaataa  "
     }
+    ,  {
+
+      "img":"icons/info/asset3.png",
+      "text":"Bakka boba'aa Raabsan"
+    },
+    {
+
+      "img":"icons/info/asset4.png",
+      "text":"Mana bashannanaa(Kaaffee)"
+    },
+    {
+
+      "img":"icons/info/asset5.png",
+      "text":"Bakka kennaa yaalaa jalqabaa(first aid)"
+    },
+    {
+
+      "img":"icons/info/asset6.png",
+      "text":"Bakka bashananaa dargaggootaa"
+    },
+    {
+
+      "img":"icons/info/asset7.png",
+      "text":"Bakka buufata Daawwattootaa"
+    }
+   
+
+
+    
+
+
     
 
 

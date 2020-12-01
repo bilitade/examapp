@@ -32,7 +32,7 @@ export default class TrafficDashboard extends Component {
                         style={{ width: "35%" }}
                       />
                       <h4 className="text-center card-title">
-                      Warning Sign
+                       Mallattoolee Akeekkachiisan
                       </h4>
                     </div>
                   </div>
@@ -55,7 +55,7 @@ export default class TrafficDashboard extends Component {
                           style={{ width: "35%" }}
                         />
                         <h4 className="text-center card-title">
-                          Mandatory sign
+                         Mallattoolee Dirqisiisan
                         </h4>
                       </div>
                     </div>
@@ -79,7 +79,7 @@ export default class TrafficDashboard extends Component {
                         style={{ width: "35%" }}
                       />
                       <h4 className="text-center card-title">
-                      Traffic Lights
+                        Ibsaa Tiraafikaa
                       </h4>
                     </div>
                   </div>
@@ -144,7 +144,7 @@ export default class TrafficDashboard extends Component {
                           style={{ width: "35%" }}
                         />
                         <h3 className="text-center card-title">
-                          Information sign
+                        Mallattoolee Odeeffannoo 
                         </h3>
                       </div>
                     </div>
@@ -166,7 +166,7 @@ export default class TrafficDashboard extends Component {
                           style={{ width: "35%" }}
                         />
                         <h3 className="text-center card-title">
-                          Restricted sign
+                         Mallattoolee Dhorkan
                         </h3>
                       </div>
                     </div>
