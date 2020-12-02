@@ -9,6 +9,7 @@ import 'jquery/dist/jquery.min'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import Police from'./Components/Police'
 import About from'./Components/About'
+import NoResult from "./Components/NoResult"
 
 import TrafficSignShow from './Components/TrafficSignShow'
 
@@ -18,6 +19,7 @@ export default class App extends Component {
   render() {
     return (
       <Router>
+      <Route exact strict path="/noresult" component={NoResult} />
         <Route exact strict path="/result" component={Result} />
         <Route exact strict path="/quiz" component={Quiz} />
         <Route exact strict path="/category" component={category} />

@@ -1,162 +1,282 @@
 [
   {
     "question": {
-      "hasImg": true,
-      "questionText": "Mallatton kun ergaa maal dabarsa",
-      "imgUrl": "icons/warning/asset31.png"
-    },
-    "optionA": {
-      "id": "1",
-      "hasImg": false,
-      "ImgUrl": "",
-      "optionText": "Daandiin bitaa fi mirgaan dhiphachaa waan deemuuf of Egannoon Konkolaachisi"
-    },
-    "optionB": {
-      "id": "2",
-      "hasImg": false,
-      "ImgUrl": "",
-      "optionText": "Irragadee cimaan waan si qunnamuuf of-egannaan konkolaachisi"
-    },
-    "optionC": {
-      "id": "3",
-      "hasImg": false,
-      "ImgUrl": "",
-      "optionText": "Daandiin mucuucaatu waan siqunnamuuf saffisa hir'isuun konkonkaalchisi"
-    },
-    "optionD": {
-      "id": "4",
-      "hasImg": false,
-      "ImgUrl": "",
-      "optionText": "Daandiin lama waan daandii tokkotti deebi'aa deemuuf of-eggannoon konkolaachiisi"
-    },
-    "answer": "1"
-  },
-  {
-    "question": {
-      "hasImg": false,
-      "questionText": "Dandiin manca'e (caccaabe) waan si qunnamuuf of-eegannoon konkolaachisi kan jedhuu mallattoo kami",
+      "hasImg":false,
+      "questionText": "Konkolaataa deemuu dursuun kan danda'amu ",
       "imgUrl": ""
     },
     "optionA": {
       "id": "1",
-      "hasImg": true,
-      "ImgUrl": "icons/warning/asset34.png",
-      "optionText": ""
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Fiixee tabba yoo gahan"
     },
     "optionB": {
       "id": "2",
-      "hasImg": true,
-      "ImgUrl": "icons/warning/asset13.png",
-      "optionText": " "
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Daandii qaxxamuraa  meetira 30 kessatti"
     },
     "optionC": {
       "id": "3",
-      "hasImg": true,
-      "ImgUrl": "icons/warning/asset27.png",
-      "optionText": ""
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Hadiidii baaburaa meetira 30 kessaatti"
     },
     "optionD": {
       "id": "4",
-      "hasImg": true,
-      "ImgUrl": "icons/warning/asset26.png",
-      "optionText": ""
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "sarara jidduu daandii ciccitaa irra"
+    },
+    "answer": "4"
+  },
+
+
+
+
+
+  {
+    "question": {
+      "hasImg":false,
+      "questionText": "Umurii gommaa dheeressuu fi walqixxee akka dhumu gochuuf kan gargaaru ",
+      "imgUrl": ""
+    },
+    "optionA": {
+      "id": "1",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Kamanadaarii dafaanii jijjiruu"
+    },
+    "optionB": {
+      "id": "2",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Gommaa naannessuu"
+    },
+    "optionC": {
+      "id": "3",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Gommaa haara bituu"
+    },
+    "optionD": {
+      "id": "4",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Gommaa dhume hojiirra oolchuu"
+    },
+    "answer": "2"
+  }
+  ,
+
+
+  {
+    "question": {
+      "hasImg":false,
+      "questionText": "Konkolaataan kee boba'aa leetirii tokkoon kiilomeetirii 10 yoo deeme, boba'aa leetiri 50 tiin kiilomeetirii meeqa deema",
+      "imgUrl": ""
+    },
+    "optionA": {
+      "id": "1",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "500km"
+    },
+    "optionB": {
+      "id": "2",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "40km"
+    },
+    "optionC": {
+      "id": "3",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "550km"
+    },
+    "optionD": {
+      "id": "4",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "400km"
     },
     "answer": "1"
   },
+
+
+
+
   {
     "question": {
-      "hasImg": true,
-      "questionText": "Mallatton kun ergaa maal dabarsa",
-      "imgUrl": "icons/warning/asset48.png"
+      "hasImg":false,
+      "questionText": "Motorri konkolaataa ka'uu yoo dide kan  ilaalamuu qabu ",
+      "imgUrl": ""
     },
     "optionA": {
       "id": "1",
       "hasImg": false,
       "ImgUrl": "",
-      "optionText": " Fuula duratti dandiin qaxxaamura waan si qunnamuuf of eeggannon konkolaachisi"
+      "optionText": "Qilleensa gommaa"
     },
     "optionB": {
       "id": "2",
       "hasImg": false,
       "ImgUrl": "",
-      "optionText": "Fuula duraa fi bitaatti daandiin qaxxamuraa waan si qunnamuuf eggaannon konkolaachisi"
+      "optionText": "Batiriin Gadi Lakkisuu"
     },
     "optionC": {
       "id": "3",
       "hasImg": false,
       "ImgUrl": "",
-      "optionText": "Dandii irratti riqicha dhiphaan waan si qunnamuuf  of eggannon konkolaachisi"
+      "optionText": "Hanga Zayitii fireenii"
     },
     "optionD": {
       "id": "4",
       "hasImg": false,
       "ImgUrl": "",
-      "optionText": "Deebii hin qabu"
-    },
-    "answer": "3"
-  },
-  {
-    "question": {
-      "hasImg": true,
-      "questionText": "Mallatton kun ergaa maal dabarsa",
-      "imgUrl": "icons/restricted/asset1.png"
-    },
-    "optionA": {
-      "id": "1",
-      "hasImg": false,
-      "ImgUrl": "",
-      "optionText": " Mallatton Kun karaa jiru konkolaachisaa darbuun ni danda'ama"
-    },
-    "optionB": {
-      "id": "2",
-      "hasImg": false,
-      "ImgUrl": "",
-      "optionText": " Konkolaataanii fi kan harkaan dhiibamu kamiyyuu kara mallatton kun jiru oofaa darbuun dhorkaadha"
-    },
-    "optionC": {
-      "id": "3",
-      "hasImg": false,
-      "ImgUrl": "",
-      "optionText": "Karaa mallatton kun jiru saayikili ofaa darbuun dhorkaadha"
-    },
-    "optionD": {
-      "id": "4",
-      "hasImg": false,
-      "ImgUrl": "",
-      "optionText": "Konkolaataan fe'iisaa darbuun dhorkaadha"
+      "optionText": "Bishaan Raadiyaatara keessa jiraachuu"
     },
     "answer": "2"
   },
+
+
   {
     "question": {
-      "hasImg": false,
-      "questionText": "Daandiin tokko sarara ciccitaa fi sarara duudaadhan bakka lamatti yoo qooddame ?",
+      "hasImg":false,
+      "questionText": "Mallattooleen ofEeggannoo kennan bocaan",
       "imgUrl": ""
     },
     "optionA": {
       "id": "1",
       "hasImg": false,
       "ImgUrl": "",
-      "optionText": "Konkolaachisaan gara sarara lachuu darbee isa fuuldura isaa jiru bira dabruu ni danda'a"
+      "optionText": "Rog afree"
     },
     "optionB": {
       "id": "2",
       "hasImg": false,
       "ImgUrl": "",
-      "optionText": "Konkolaachisaan gara sarara duudaaa jiru sarara lachuu qaxxamuree isaa fuuldura bira darbuu ni danda'a"
+      "optionText": "Rog Sadee"
     },
     "optionC": {
       "id": "3",
       "hasImg": false,
       "ImgUrl": "",
-      "optionText": "konkolaachisaan gara sarara duudaa jiru ofirra deebi'uu hin danda'u"
+      "optionText": "Geengoo Halluu Adii"
     },
     "optionD": {
       "id": "4",
       "hasImg": false,
       "ImgUrl": "",
-      "optionText": "A fi C"
+      "optionText": "Gommaa dhume hojiirra oolchuu"
     },
-    "answer": "4"
+    "answer": "2"
+  },
+
+
+  {
+    "question": {
+      "hasImg":false,
+      "questionText": "Waa'ee faayidaa fireecha bitaa kan sirri ta'e ",
+      "imgUrl": ""
+    },
+    "optionA": {
+      "id": "1",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Gara mirgaatti naanna'uuf"
+    },
+    "optionB": {
+      "id": "2",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Konkolaataan nu duubaa akka darbu heyyamuuf"
+    },
+    "optionC": {
+      "id": "3",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "gara bitaatti Naanna'ani"
+    },
+    "optionD": {
+      "id": "4",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Konkolaataa dhaabuuf"
+    },
+    "answer": "3"
+  },
+  
+  
+  
+  {
+    "question": {
+      "hasImg":true,
+      "questionText": "Hiikkan mallattoo kanaa ",
+      "imgUrl": "icons/priority/asset1.png"
+    },
+    "optionA": {
+      "id": "1",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Dursa Kenni"
+    },
+    "optionB": {
+      "id": "2",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Daandii kallatti tokko"
+    },
+    "optionC": {
+      "id": "3",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Dhaabuun dhoorkaadha"
+    },
+    "optionD": {
+      "id": "4",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Dursuun dhoorkaadha"
+    },
+    "answer": "1"
+  },
+  {
+    "question": {
+      "hasImg":true,
+      "questionText": "Ergaan mallattoo tiraafikii kanaa",
+      "imgUrl": "icons/warning/asset14.png"
+    },
+    "optionA": {
+      "id": "1",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Namoonni hojii daandiirra jiru"
+    },
+    "optionB": {
+      "id": "2",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Iddoon qaxxamura daandii warra lafoo fuuldura jiraachuu"
+    },
+    "optionC": {
+      "id": "3",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Daandii kallatti lamaa"
+    },
+    "optionD": {
+      "id": "4",
+      "hasImg": false,
+      "ImgUrl": "",
+      "optionText": "Warri lafoo darbuun dhoorkaadha"
+    },
+    "answer": "2"
   }
+ 
+
+
+
+
 ]

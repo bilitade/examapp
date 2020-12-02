@@ -34,7 +34,7 @@ export default class About extends Component {
                 </a>
               </div>
               <div className="col text-center col-sm-12 col-md-4">
-                <a href="https://www.youtube.com/channel/UCFyL1kHVYvYZfo3QAXZLw5g">
+                <a href="https://www.youtube.com/channel/UCFyL1kHVYvYZfo3QAXZLw5g"   target="_blank" >
                   <img src="assets/img/youtube.png" alt="" style={{ width: "50%" }} />
                 </a>
               </div>

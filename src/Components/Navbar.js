@@ -7,7 +7,7 @@ export default class Navbar extends Component {
       <>
         <nav className="navbar navbar-light navbar-expand-sm fixed-top shadow-lg"  style={{background: "#ffffff"}}>
           <div className="container-fluid">
-          <a className="navbar-brand" href="/"><img src="assets/img/moooodel.png" alt="" style={{minWidth: 50, maxWidth: 70}} /></a>
+          <Link to="/" className="navbar-brand" ><img src="assets/img/moooodel.png" alt="" style={{minWidth: 50, maxWidth: 70}} /></Link>
 
 
             <button

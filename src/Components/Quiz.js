@@ -50,7 +50,9 @@ export default class Quiz extends Component {
 
   // function to display first question
   displayQuestions = () => {
-    this.setState(
+     if(this.props.location.state!==undefined)
+     {
+      this.setState(
       (prevState) => {
         const { state } = this.props.location;
         switch (state.examCategory) {
@@ -153,6 +155,7 @@ export default class Quiz extends Component {
         });
       }
     );
+     }
   };
 
   changeExamMode = (e) => {
@@ -193,13 +196,25 @@ export default class Quiz extends Component {
       correctAnswers: this.state.correctAnswers,
       wrongAnswers: this.state.wrongAnswers,
     };
-
+    if (this.state.examMode){
     setTimeout(() => {
       this.props.history.push({
         pathname: "/result",
         state: PlayState,
       });
     }, 1000);
+  }
+  else{
+    
+    setTimeout(() => {
+      this.props.history.push({
+        pathname: "/noresult",
+      
+      });
+    }, 1000);
+
+
+  }
   };
 
   correctAnswer = () => {
@@ -348,7 +363,7 @@ export default class Quiz extends Component {
             </div>
             <span className="btn btn-dark ml-4 ">
               {" "}
-              Gaaffilee {" "}  <i>{this.state.numberOfQuestions} </i> {"  "} keessa{ " "}  <i>{this.state.currentQuestionIndex + 1}</i> <sup>ffa</sup>{" "}
+              Gaaffi {" "} <i>{this.state.currentQuestionIndex + 1}</i> {" "} /{" "}<i>{this.state.numberOfQuestions} </i> {"  "} { " "} {" "}
              
             </span>
 

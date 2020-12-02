@@ -39,7 +39,7 @@ export default class Result extends Component {
           >
             <span>
               <strong>STATUS:&nbsp;&nbsp;</strong>
-              {this.state.score > 75 ? (
+              {this.state.score >= 75 ? (
                 <i
                   className="fa fa-check-circle"
                   style={{ fontSize: 43, color: "#2cd710" }}
@@ -70,7 +70,7 @@ export default class Result extends Component {
                 className="text-left"
                 style={{ marginTop: 5, marginBottom: 5, fontSize: "1.5rem" }}
               >
-                <strong>Your Score &nbsp; </strong>&nbsp;-{" "}
+                <strong> Qabxii kee harkaa 100 keessaa &nbsp; </strong>&nbsp;-{" "}
                 <strong>
                   <em>{this.state.score.toFixed(2)}% &nbsp; &nbsp;&nbsp;</em>
                 </strong>
@@ -79,7 +79,7 @@ export default class Result extends Component {
                 className="text-left"
                 style={{ marginBottom: 5, fontSize: "1.5rem" }}
               >
-                <strong>Number of Questions&nbsp;&nbsp;</strong>-
+                <strong>Baay'ina Gaffilee&nbsp;&nbsp;</strong>-
                 <strong>
                   <em> {this.state.numberOfQuestions}</em>
                 </strong>
@@ -89,7 +89,7 @@ export default class Result extends Component {
                 style={{ marginBottom: 5, fontSize: "1.5rem" }}
               >
                 <strong>
-                  Number of Answered Question{" "}
+                 Baayinaa Gaafilee deebifaman{" "}
                   {this.state.numberOfAnsweredQuestion}
                 </strong>
               </li>
@@ -98,7 +98,7 @@ export default class Result extends Component {
                 style={{ marginBottom: 5, fontSize: "1.5rem" }}
               >
                 <strong>
-                  Correct Answers -&nbsp;<em>{this.state.correctAnswers}</em>
+                 Baayina Gaaffilee sirrii deebifaaman -&nbsp;<em>{this.state.correctAnswers}</em>
                 </strong>
               </li>
               <li
@@ -106,7 +106,7 @@ export default class Result extends Component {
                 style={{ marginBottom: 5, fontSize: "1.5rem" }}
               >
                 <strong>
-                  Wrong Answers -&nbsp;&nbsp;<em> {this.state.wrongAnswers}</em>
+                Baayina Gaffilee Dogogora deebifaaman  -&nbsp;&nbsp;<em> {this.state.wrongAnswers}</em>
                 </strong>
               </li>
             </ul>
